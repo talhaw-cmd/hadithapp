@@ -56,10 +56,13 @@ setLoading(true);
   
 
   return (
- <div className="p-5 gap-2 flex flex-col justify-start items-center w-full">
+ <div className="p-5 gap-1 flex flex-col justify-start items-center w-full">
       <div className="w-full flex flex-col justify-center items-center rounded-lg text-white bg-gray-800 py-4 px-6">
         <h2 className="text-gray-500">BookName</h2>
         <h2 className="text-xl">{book}</h2>
+      </div>
+      <div className="overflow-hidden w-full flex flex-row justify-around items-center rounded-lg text-white bg-gray-800 py-4 px-6">
+        <div className="flex gap-2"><h2 className="text-gray-500">Chapter:</h2><h2>{chapter}</h2></div>
       </div>
 
       <div className="w-full flex gap-1 flex-col justify-center items-center rounded-lg text-white bg-gray-800 py-4 px-6">
@@ -72,8 +75,9 @@ setLoading(true);
       <div className="w-full flex flex-row justify-around items-center rounded-lg text-white bg-gray-800 py-4 px-6">
         <div className="flex gap-2"><h2 className="text-gray-500">HadithNumber:</h2><h2>{number}</h2></div>      
         <div className="flex gap-2"><h2 className="text-gray-500">Status:</h2><h2>{status}</h2></div>
-        <div className="flex gap-2"><h2 className="text-gray-500">Chapter:</h2><h2>{chapter}</h2></div>
+        {/* <div className="flex gap-2"><h2 className="text-gray-500">Chapter:</h2><h2>{chapter}</h2></div> */}
       </div>
+
 
       <button 
         onClick={generate} 
